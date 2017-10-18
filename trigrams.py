@@ -5,7 +5,6 @@ import random
 def fill_book_dict(path):
     """Fill out book_dict."""
     book = open(path).read().replace('\n', " ").split(" ")
-    # book = book.split(" ")
     book_iterator = iter(book)
     next(book_iterator)
     book_output = [" ".join((first_word, second_word))
