@@ -4,7 +4,7 @@ import random
 
 def fill_book_dict(path):
     """Fill out book_dict."""
-    book = open(path).read().replace('\n', " ").split(" ")
+    book = open(path).read().replace('\n', " ").strip().split(" ")
     book_iterator = iter(book)
     next(book_iterator)
     book_output = [" ".join((first_word, second_word))
@@ -27,7 +27,7 @@ def make_first_key(path, book_dict):
 
 
 def main(text, number):
-    """Currently does nothing."""
+    """Make a totally sweet story based on the passed in text."""
     book_dict = fill_book_dict(text)
     search_key = make_first_key(text, book_dict)
     generated_text = ""
