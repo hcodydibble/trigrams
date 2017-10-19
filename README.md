@@ -1,6 +1,6 @@
 # Trigram Algorithim
 
-All books from (gutenberg.org)[gutenberg.org]
+All books from [Project Gutenberg](gutenberg.org)
 
 ## SciFi Mix
     - Alan Arkin
